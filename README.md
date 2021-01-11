@@ -1,7 +1,9 @@
 # Extractive Text Summarization and Keyword Extraction
+[![Generic badge](https://img.shields.io/badge/Python-3.6-green)](https://shields.io/)
 
-Final Project for CSCI 6509: Natural Language Processing
-Dalhousie University, Winter 2020
+**Final Project for CSCI 6509: Natural Language Processing**
+
+**Dalhousie University, Winter 2020**
 
 ## Description
 In this project, we aim to improve off-the-shelf products for text summarization and keyword
@@ -69,9 +71,9 @@ and Knowledge Engineering, 29(02), 177-196. doi:10.1142/s0218194019500086_"
        summary, but in case of automatic redundancy removal, the goal is to
        have as many diverse sentences as possible. Therefore, the fnal summary
        doesn't overlap much with the human-generated one.
+   ![](https://raw.githubusercontent.com/AsalJalilvand/extractive-text-summarization/master/images/generic.PNG)
 
-
-##Query-based summarization
+## Query-based summarization
 **Problem definition:** Given an article _w_ and a query _q_, we want to find a concise 
 representation, called _sq_, summarizing the sections of the article related to query
 _q_.The length of the summary is strictly lower than the original text, that is,
@@ -98,6 +100,8 @@ Webster (eds.), ALTA (p./pp. 2-10), : ACL._"
 - Metric: ROUGE
 - Result: Semantic query-based summarization slightly performs better than the
   baseline method.
+  ![](https://raw.githubusercontent.com/AsalJalilvand/extractive-text-summarization/master/images/query.PNG)
+
 
 ## Keyword extraction
 **Problem definition:** Given an article w, we want to find a set of keywords 
@@ -116,8 +120,10 @@ Series, 887, 012028. doi:10.1088/1742-6596/887/1/012028_"
 - Result: The out-performance is negligible and using semantic weights from
   a pre-trained model does not give any advantages over using a less complex
   traditional method.
+  ![](https://raw.githubusercontent.com/AsalJalilvand/extractive-text-summarization/master/images/keywords.PNG)
 
-##Final Conclusion
+
+## Final Conclusion
 The improvements of incorporating word embeddings into TextRank were marginal 
 and slow to execute.
 Considering the timeliness-performance trade-off, the off-the-shelf product wins as it is 
